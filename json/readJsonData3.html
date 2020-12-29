@@ -1,0 +1,145 @@
+<script>
+  let obj = {
+    Kerala: {
+      districtData: {
+        Thrissur: {
+          confirmed: 7,
+          lastupdatedtime: "",
+          delta: {
+            confirmed: 0
+          }
+        },
+        Alappuzha: {
+          confirmed: 2,
+          lastupdatedtime: "",
+          delta: {
+            confirmed: 0
+          }
+        },
+        Kasaragod: {
+          confirmed: 90,
+          lastupdatedtime: "",
+          delta: {
+            confirmed: 0
+          }
+        },
+        Pathanamthitta: {
+          confirmed: 12,
+          lastupdatedtime: "",
+          delta: {
+            confirmed: 0
+          }
+        },
+        Kannur: {
+          confirmed: 33,
+          lastupdatedtime: "",
+          delta: {
+            confirmed: 0
+          }
+        },
+        Ernakulam: {
+          confirmed: 20,
+          lastupdatedtime: "",
+          delta: {
+            confirmed: 0
+          }
+        },
+        Kottayam: {
+          confirmed: 3,
+          lastupdatedtime: "",
+          delta: {
+            confirmed: 0
+          }
+        },
+        Thiruvananthapuram: {
+          confirmed: 8,
+          lastupdatedtime: "",
+          delta: {
+            confirmed: 0
+          }
+        },
+        Idukki: {
+          confirmed: 3,
+          lastupdatedtime: "",
+          delta: {
+            confirmed: 0
+          }
+        },
+        Malappuram: {
+          confirmed: 10,
+          lastupdatedtime: "",
+          delta: {
+            confirmed: 0
+          }
+        },
+        Kozhikode: {
+          confirmed: 6,
+          lastupdatedtime: "",
+          delta: {
+            confirmed: 0
+          }
+        },
+        Palakkad: {
+          confirmed: 5,
+          lastupdatedtime: "",
+          delta: {
+            confirmed: 0
+          }
+        },
+        Wayanad: {
+          confirmed: 1,
+          lastupdatedtime: "",
+          delta: {
+            confirmed: 0
+          }
+        },
+        Kollam: {
+          confirmed: 2,
+          lastupdatedtime: "",
+          delta: {
+            confirmed: 0
+          }
+        }
+      }
+    },
+    Telangana: {
+      districtData: {
+        Hyderabad: {
+          confirmed: 36,
+          lastupdatedtime: "",
+          delta: {
+            confirmed: 0
+          }
+        },
+        Karimnagar: {
+          confirmed: 3,
+          lastupdatedtime: "",
+          delta: {
+            confirmed: 0
+          }
+        }
+      }
+    }
+  };
+  document.write(`
+    <table border='2' align='center'>
+        <thead>
+            <tr>
+                <th>State</th>
+                <th>District</th>
+                <th>Infected Persons</th>
+                <th>Deth</th>
+
+            </tr>
+        </thead>
+        <tbody>
+    `);
+  for (let x in obj) {
+    document.write(`
+            <tr>
+                <th>${x}</th>
+                <th>${x.districtData.Telangana.delta}</th>
+            </tr>
+        `);
+  }
+</script>

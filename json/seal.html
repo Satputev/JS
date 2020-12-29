@@ -1,0 +1,19 @@
+<script>
+  //seal()
+  // reading & updation ......granted
+  // writing and deletion ....denied
+
+  let obj = { p_id: 111 };
+  Object.seal(obj);
+
+  console.log(obj); //{p_id: 111}
+
+  obj.p_id = 222;
+  console.log(obj); //{p_id: 222}
+
+  obj.p_name = "p_one";
+  console.log(obj); //{p_id: 222} permission denied
+
+  delete obj.p_id;
+  console.log(obj); //{p_id: 222} permission denied
+</script>

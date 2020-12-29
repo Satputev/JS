@@ -1,0 +1,17 @@
+<script>
+  let obj = { p_id: 111 };
+  console.log(obj); //{p_id: 111}
+
+  //lock
+  //Reading ...Granted
+  // Updation & Writing & Deletion ....Denied
+
+  Object.freeze(obj); //freezing obj
+  console.log(obj); //{p_id: 111}
+  obj.p_id = 222;
+  console.log(obj); //{p_id: 111}
+  obj.p_name = "p_one";
+  console.log(obj); //{p_id: 111}
+  delete obj.p_id;
+  console.log(obj); //{p_id: 111}
+</script>

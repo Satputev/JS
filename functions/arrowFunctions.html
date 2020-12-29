@@ -1,0 +1,38 @@
+<!--
+syntax :-
+let/var/const variable_name=(arguments)=>{
+    //function defination
+}
+variable_name()//Function calling
+-->
+<!--
+<script>
+    
+  let fun_one = () => {
+    console.log("Welcome to Arrow function...");
+  };
+  console.log(fun_one); //function defination
+  fun_one(); //Welcome to Arrow function...
+</script>
+-->
+<!--
+<script>
+  let fun_one = () => {
+    return fun_two;
+  };
+  let fun_two = () => {
+    console.log("Angular", "NodeJs", "SqlServer");
+  };
+  fun_one()(); //Angular NodeJs SqlServer
+</script>
+-->
+
+<script>
+  let fun_one = (arg1, arg2, arg3) => {
+    return () => {
+      console.log(arg1, arg2, arg3);
+    };
+  };
+  fun_one()(); //undefined undefined undefined
+  fun_one("Angular", "NodeJs", "MongoDB")(); //Angular NodeJs MongoDB
+</script>

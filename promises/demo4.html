@@ -1,0 +1,14 @@
+<script>
+  let mypromise = new Promise((rej, res) => {
+    res("resolve ..");
+    rej("reject..");
+  });
+  mypromise.then(
+    posRes => {
+      console.log("hello" + posRes);
+    },
+    errRes => {
+      console.log(errRes); //resolve..
+    }
+  );
+</script>

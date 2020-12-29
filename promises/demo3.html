@@ -1,0 +1,14 @@
+<script>
+  let mypromise = new Promise((resolve, reject) => {
+    reject("mypromise filure..");
+    resolve("mypromise success..");
+  });
+  mypromise.then(
+    posRes => {
+      console.log(posRes);
+    },
+    errRes => {
+      console.log(errRes); //mypromise filure..
+    }
+  );
+</script>

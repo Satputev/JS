@@ -1,0 +1,35 @@
+<html>
+  <!--
+ <script>
+    function fun_one() {
+      console.log("Welcome to javascript...");
+    }
+    console.log(fun_one); //function defination
+    //fun_one();//Welcome to javascript...
+  </script>
+  -->
+
+  <!-- <script>
+    function fun_one(arg1, arg2, arg3) {
+      console.log(arg1, arg2, arg3);
+    }
+    console.log(fun_one);
+    fun_one(); //undefined undefined undefined
+    fun_one("Angular", "Node", "Mysql"); //Angular Node Mysql
+    fun_one(undefined, undefined, null); //undefined undefined null
+    fun_one("React", null, undefined); //React null undefined
+  </script>-->
+  <script>
+    function fun_one() {
+      return fun_two;
+    }
+
+    function fun_two(arg1, arg2, arg3) {
+      console.log(arg1, arg2, arg3);
+    }
+    console.log(fun_one); //function one defination
+    console.log(fun_one()); //function one output ie.function two defination
+    fun_one()("nodejs"); //nodejs undefined undefined
+    fun_one()("ReactJs", "NodeJs", "MongoDb"); //ReactJs NodeJs MongoDb
+  </script>
+</html>

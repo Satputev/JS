@@ -1,0 +1,49 @@
+<!-- <script>
+  let my_promise = new Promise((resolve, reject) => {
+    resolve("Promised produced");
+  });
+  my_promise.then(
+    (posRes) => {
+      console.log(posRes);
+    },
+    (errRes) => {
+      console.log(errRes);
+    }
+  );
+</script> -->
+
+<!-- <script>
+  let my_promise = new Promise((resolve, reject) => {
+    reject("promise canceled");
+
+    resolve("Promise produced");
+  });
+  my_promise.then(
+    (posRes) => {
+      console.log(posRes);
+    },
+    (errRes) => {
+      console.log(errRes);
+    }
+  );
+</script> -->
+
+<script>
+  let my_promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("promise success");
+    }, 1000);
+    setTimeout(() => {
+      reject("promise cancelled");
+    }, 2000);
+  });
+
+  my_promise.then(
+    (posRes) => {
+      console.log(posRes);
+    },
+    (errRes) => {
+      console.log(errRes);
+    }
+  );
+</script>

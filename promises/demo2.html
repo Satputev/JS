@@ -1,0 +1,14 @@
+<script>
+  let mypromise = new Promise((resolve, reject) => {
+    resolve("my promise is success");
+    reject("mypromise is rejectes");
+  });
+  mypromise.then(
+    posRes => {
+      console.log(posRes); ////my promise is success
+    },
+    errRes => {
+      console.log(errRes);
+    }
+  );
+</script>

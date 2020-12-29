@@ -1,0 +1,36 @@
+<!--
+syntax:-
+
+function function_name(...arg1){
+    //function defination
+}
+
+//(...) also called as spread operator
+//per function we can pass only one rest parameter
+//in function defination the rest parameter should be last
+
+-->
+<!--
+<script>
+  function fun_one(...arg1) {
+    console.log(arg1);
+  }
+  fun_one(); //[]
+  fun_one("ReactJS"); //["ReactJS"]
+  fun_one("ReactJs", "NodeJS", "MongoDb"); //["ReactJs", "NodeJS", "MongoDb"]
+  fun_one(undefined); //[undefined]
+  fun_one(null); //[null]
+  fun_one("ReactJs", 10, undefined, true, null, 10.15); //["ReactJs", 10, undefined, true, null, 10.15]
+</script>
+-->
+<script>
+  function fun_one(arg1, ...arg2) {
+    console.log(arg1, arg2);
+  }
+  fun_one(); //undefined []
+  fun_one("ReactJs", 10, "NodeJs", true, undefined, null); //[10, "NodeJs", true, undefined, null]
+  function fun_two(...arg1,arg2){
+      console.log(arg1,arg2);
+  }
+  //fun_two();//Uncaught SyntaxError: Rest parameter must be last formal parameter
+</script>

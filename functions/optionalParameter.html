@@ -1,0 +1,10 @@
+<html>
+  <script>
+    function fun_one(arg1 = 10, arg2) {
+      console.log(arg1, arg2);
+    }
+    fun_one(); //10 undefined
+    fun_one((arg2 = 20)); //20 undefined it wont take names
+    fun_one(1, 2); //1,2
+  </script>
+</html>

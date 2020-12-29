@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <script>
+      $.ajax({
+        method: "GET",
+        url: "https://api.covid19india.org/state_district_wise.json",
+        success: posRes => {
+          document.write(`
+                <table align='center' border='2'>
+                    <thead>
+                        <tr>
+                            <th>
+                            State</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                `);
+          for (let x in posRes) {
+            for (let y in x) {
+              document.write(`
+                <tr>
+                    <th>${x}</th>
+                    <th>${y}</th>
+                </tr>
+            `);
+            }
+            document.write(`</tbody></table>`);
+          }
+        },
+        error: errRes => {
+          document.write(errRes);
+        }
+      });
+    </script>
+  </body>
+</html>

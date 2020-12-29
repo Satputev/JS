@@ -1,0 +1,8 @@
+{"emps":[
+{"id":1,"name":"e_one","salary":1000,"desg":"developer"},
+{"id":2,"name":"e_two","salary":2000,"desg":"Designer"},
+{"id":3,"name":"e_three","salary":3000,"desg":"tester"},
+{"id":4,"name":"e_four","salary":4000,"desg":"developer"},
+{"id":5,"name":"e_five","salary":5000,"desg":"developer"},
+]
+}

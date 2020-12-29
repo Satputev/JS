@@ -1,0 +1,15 @@
+<script>
+  let mypromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("success after 5 sec");
+    }, 5000);
+  });
+  mypromise.then(
+    posRes => {
+      console.log(posRes); //success after 5 sec
+    },
+    errRes => {
+      console.log(errRes);
+    }
+  );
+</script>

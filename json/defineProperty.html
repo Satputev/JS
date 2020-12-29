@@ -1,0 +1,14 @@
+<script>
+  let obj = {
+    p_id: 111
+  };
+  Object.defineProperty(obj, "p_name", {
+    value: 10000,
+    writable: false
+  });
+  console.log(obj); //{p_id: 111, p_name: 10000}
+  obj.p_id = 222;
+  console.log(obj); //{p_id: 222, p_name: 10000}
+  obj.p_name = "product_one";
+  console.log(obj); //{p_id: 222, p_name: 10000}
+</script>

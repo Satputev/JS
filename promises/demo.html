@@ -1,0 +1,13 @@
+<script>
+  let mypromises = new Promise((resolve, reject) => {
+    resolve("Welcome to promises..");
+  });
+  mypromises.then(
+    posRes => {
+      console.log(posRes); //Welcome to promises..
+    },
+    errRes => {
+      console.log(errRes);
+    }
+  );
+</script>

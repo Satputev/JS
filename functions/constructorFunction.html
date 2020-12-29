@@ -1,0 +1,40 @@
+<!-- <script>
+  function fun_one() {
+    this.wish = "Welcome to constructor functions";
+  }
+  let obj = new fun_one();
+  console.log(obj.wish);
+</script> -->
+<!-- 
+<script>
+  function mern() {
+    this.sub_one = "ReactJs";
+    this.sub_two = "NodeJs";
+    this.sub_three = "MongoDB";
+
+    this.getSubOne = function() {
+      return this.sub_one;
+    };
+    this.getSubTwo = () => {
+      return this.sub_two;
+    };
+    this.getSubThree = () => {
+      return this.sub_three;
+    };
+  }
+  let obj = new mern();
+  console.log(obj.getSubOne(), obj.getSubTwo(), obj.getSubThree());
+</script> -->
+
+<script>
+  function my_fun(arg1, arg2, arg3) {
+    this.sub_one = arg1;
+    this.sub_two = arg2;
+    this.sub_three = arg3;
+  }
+  let obj1 = new my_fun("ReactJS", "NodeJS", "MongoDB");
+  console.log(obj1.sub_one, obj1.sub_two, obj1.sub_three); //ReactJS NodeJS MongoDB
+
+  let obj2 = new my_fun("Angular", "NodeJS", "SQLServer");
+  console.log(obj2.sub_one, obj2.sub_two, obj2.sub_three); //Angular NodeJS SQLServer
+</script>

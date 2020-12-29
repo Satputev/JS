@@ -1,0 +1,70 @@
+<!-- <html>
+  <head>
+    <script src="./jquery.min.js"></script>
+  </head>
+  <body>
+    <script>
+      $.ajax({
+        method: "GET",
+        url: "http://localhost:3000/emps",
+        success: (posRes) => {
+          console.log(posRes);
+        },
+        error: (errRes) => {
+          console.log(errRes);
+        },
+      });
+    </script>
+  </body>
+</html> -->
+
+<!-- <html>
+  <head>
+    <script src="./jquery.min.js"></script>
+  </head>
+  <body>
+    <script>
+      $.ajax({
+        method: "POST",
+        url: "http://localhost:3000/emps",
+        data: { id: 106, name: "e_six", sal: 6000, desg: "training" },
+        success: (posRes) => {
+          console.log(posRes);
+        },
+        error: (errRes) => {
+          console.log(errRes);
+        },
+      });
+    </script>
+  </body>
+</html> -->
+
+<html>
+  <head>
+    <script src="./jquery.min.js"></script>
+  </head>
+  <body>
+    <script>
+      $.ajax({
+        method: "GET",
+        url: "https://restcountries.eu/rest/v2/all",
+        success: (posRes) => {
+          console.log(posRes);
+          $.ajax({
+            method: "GET",
+            url: "http://dummy.restapiexample.com/api/v1/employees",
+            success: (posRes1) => {
+              console.log(posRes1);
+            },
+            error: (errRes1) => {
+              console.log(errRes1);
+            },
+          });
+        },
+        error: (errRes) => {
+          console.log(errRes);
+        },
+      });
+    </script>
+  </body>
+</html>
